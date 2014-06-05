@@ -1,0 +1,1 @@
+<tr onclick="set_var({I});"><td style="border:1px solid #FFFFFF; border-right:none;">{IMG}</td><td style="border:1px solid #FFFFFF; border-right:none;">{POS}</td><td style="border:1px solid #FFFFFF; border-right:none;">{NAME}</td><td style="border:1px solid #FFFFFF; border-right:none;">{UP}</td><td style="border:1px solid #FFFFFF;">{DOWN}</td></tr>

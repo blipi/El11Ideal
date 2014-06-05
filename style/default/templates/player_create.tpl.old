@@ -1,0 +1,223 @@
+<body>
+
+<!-- start header -->
+<div id="header">
+  <div id="banner"><img src="{STYLE_DIR}images/banner11.gif" alt="" width="943" height="190" /></div>
+  <br/>
+<div id="menu">
+		<ul>
+			<li><a href="index.php" class="current_page_item">Inicio</a></li>
+			<li><a href="#">{FORUM}</a></li>
+			<li><a href="#">{NORMAS}</a></li>
+			<li><a href="#">{CONTACT}</a></li>
+		</ul>
+  </div>
+</div>
+<!-- end header -->
+<div id="wrapper">
+	<!-- start page -->
+	<div id="page">
+		<div id="page-bg">
+		  <div id="sidebar1" class="sidebar">
+				<div id="sidebar1-bgtop">
+				<div id="sidebar1-bgbtm">
+				<ul>
+					<li>
+						<h2>Login</h2>
+						<ul>
+						  <li>
+                            <div align="center">{WELCOM} <strong>{NICK}</strong>, {WELCOM_TO}.
+                              <br>
+                            </div>
+						  </li>
+					      <li>
+					        <div align="center">
+					          <input type="submit" value="PERFIL" a href="#" class="green_input" />
+					          <br>
+				              </div><br>
+					        <div align="center">
+					          <input type="submit" value="SALIR" onclick="location.href='logout.php';" a href="#" class="green_input" />
+					          <br>
+				              </div>
+				          </li>
+					  </ul>
+					</li>
+					<li>
+						<h2>{TEAM}</h2>
+						<ul>
+                        	<li><a href="#">{ALIGN}</a></li>
+						    <li><a href="#">{TACTICS}</a></li>
+						    <li><a href="#">{TRAINING}</a></li>
+					        <li><a href="#">{LESIONES}</a></li>
+						</ul>
+                        <h2>{PLAYS}</h2>
+					  <ul>
+					    	<li><a href="#">{TODAY_PLAYS}</a></li>
+						    <li><a href="#">{AMISTOSOS}</a></li>
+						    <li><a href="#">{CALENDAR}</a></li>
+					        <li><a href="#">{RESULTS}</a></li>
+					  </ul>
+                         <h2>{TRASPASOS}</h2>
+						<ul>
+						    <li><a href="#">{MARKET}</a></li>
+						    <li><a href="#">{ALTAS_BAJAS}</a></li>
+						    <li><a href="#">{CONTRATOS}</a></li>
+				        </ul>
+                        <h2>{COMPETITON}</h2>
+						<ul>
+						    <li><a href="#">{CLASIFICACION}</a></li>
+						    <li><a href="#">{JORNADA}</a></li>
+				        </ul>
+					</li>
+				</ul>
+				</div>
+			</div>
+			</div>
+			<!-- start content -->
+			<div id="content">
+				<div id="content-bgtop">
+				<div id="content-bgbtm">
+				<div class="post">
+				  <h1 class="title"><CENTER>
+				    {CREATING}<br>
+                  </CENTER></h1>
+                  <table width="539" height="232" border="1">
+                      <tr>
+                        <td height="226">
+						<script>
+							function validate(frm){
+								if (frm.team_name.value.length <= 3){ alert("{TEAM_NAME_SHORT}"); return false; };
+								return true;
+							}
+							function changeHelp(id, c){
+								var obj = document.getElementById("player_info");
+								switch(id){
+									case 0:	obj.innerHTML = "{MAX} "+c+"/2."; break;
+									case 1:	obj.innerHTML = "{MAX} "+c+"/6."; break;
+									case 2:	obj.innerHTML = "{MAX} "+c+"/3."; break;
+									case 3:	obj.innerHTML = "{MAX} "+c+"/3."; break;
+									case 4:	obj.innerHTML = "{MAX} "+c+"/3."; break;
+								}
+							}
+						</script>
+						<div style="padding-left:10px;padding-bottom:5px; color:Olive;"> {WELCOME_PLAYER_CREATE} </div>
+						<form  method="POST" action="{ROOT}game.php?page=playercreate&check=1" onsubmit="return validate(this);">
+						<table width="400" align="center">
+						  {ERR}  
+						  <tr><td width="50%">{PLAYER_NAME} </td><td><input type="text" name="player_name"></td></tr>
+						  <tr><td width="50%">{PLAYER_SURNAME} </td><td><input type="text" name="player_surname"></td></tr>
+						  <tr><td width="50%">{PLAYER_POSITION} </td><td>
+							<select name="player_pos">
+								<option value="1">{PORTERO} ({P_CURRENT}/3)</option>
+								<option value="2">{DEFENSA} ({D_CURRENT}/7)</option>
+								<option value="3">{MEDIO_DEF} ({MD_CURRENT}/5)</option>
+								<option value="4">{MEDIO_ATA} ({MA_CURRENT}/5)</option>
+								<option value="5">{DELANTERO} ({DEL_CURRENT}/5)</option>
+							</select>
+							<input type="hidden" name="p0">
+							<input type="hidden" name="p1">
+							<input type="hidden" name="p2">
+							<input type="hidden" name="p3">
+							<input type="hidden" name="p4">
+							<input type="hidden" name="p5">
+							<input type="hidden" name="p6">
+							<input type="hidden" name="p7">				
+						  </td></tr>
+						  <tr><td colspan="2">
+<div style="border: 1px solid #000000;">
+<table width="100%">
+&nbsp;&nbsp;<b>Estatus:<br></b>
+<tr><td></td><td><a class="point_n">&nbsp;&nbsp;</a><a class="point_n">&nbsp;&nbsp;</a><a class="point_n">&nbsp;&nbsp;</a><a class="point_n">&nbsp;&nbsp;</a><a class="point_n">&nbsp&nbsp;&nbsp;5</a><a class="point_n">&nbsp;&nbsp;</a><a class="point_n">&nbsp;&nbsp;</a><a class="point_n">&nbsp;&nbsp;6</a></td></tr>
+<tr><td width="50%" style="padding-left:20px;">Portero:</td><td align="left"><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a id="e00" class="point_e" onclick="point(0,0);">&nbsp;&nbsp;</a><a id="e01" class="point_e" onclick="point(0,1);">&nbsp;&nbsp;</a><a id="e02" class="point_e" onclick="point(0,2);">&nbsp;&nbsp;</a><a id="e03" class="point_e" onclick="point(0,3);">&nbsp;&nbsp;</a><a id="e04" class="point_e" onclick="point(0,4);">&nbsp;&nbsp;</a></td></tr>
+<tr><td width="50%" style="padding-left:20px;">Agilidad:</td><td align="left"><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a id="e10" class="point_e" onclick="point(1,0);">&nbsp;&nbsp;</a><a id="e11" class="point_e" onclick="point(1,1);">&nbsp;&nbsp;</a><a id="e12" class="point_e" onclick="point(1,2);">&nbsp;&nbsp;</a><a id="e13" class="point_e" onclick="point(1,3);">&nbsp;&nbsp;</a><a id="e14" class="point_e" onclick="point(1,4);">&nbsp;&nbsp;</a></td></tr>
+<tr><td width="50%" style="padding-left:20px;">Reflejos:</td><td align="left"><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a id="e20" class="point_e" onclick="point(2,0);">&nbsp;&nbsp;</a><a id="e21" class="point_e" onclick="point(2,1);">&nbsp;&nbsp;</a><a id="e22" class="point_e" onclick="point(2,2);">&nbsp;&nbsp;</a><a id="e23" class="point_e" onclick="point(2,3);">&nbsp;&nbsp;</a><a id="e24" class="point_e" onclick="point(2,4);">&nbsp;&nbsp;</a></td></tr>
+<tr><td width="50%" style="padding-left:20px;">Defensa:</td><td align="left"><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a id="e30" class="point_e" onclick="point(3,0);">&nbsp;&nbsp;</a><a id="e31" class="point_e" onclick="point(3,1);">&nbsp;&nbsp;</a><a id="e32" class="point_e" onclick="point(3,2);">&nbsp;&nbsp;</a><a id="e33" class="point_e" onclick="point(3,3);">&nbsp;&nbsp;</a><a id="e34" class="point_e" onclick="point(3,4);">&nbsp;&nbsp;</a></td></tr>
+<tr><td width="50%" style="padding-left:20px;">Precisi�n:</td><td align="left"><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a id="e40" class="point_e" onclick="point(4,0);">&nbsp;&nbsp;</a><a id="e41" class="point_e" onclick="point(4,1);">&nbsp;&nbsp;</a><a id="e42" class="point_e" onclick="point(4,2);">&nbsp;&nbsp;</a><a id="e43" class="point_e" onclick="point(4,3);">&nbsp;&nbsp;</a><a id="e44" class="point_e" onclick="point(4,4);">&nbsp;&nbsp;</a></td></tr>
+<tr><td width="50%" style="padding-left:20px;">Potencia:</td><td align="left"><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a id="e50" class="point_e" onclick="point(5,0);">&nbsp;&nbsp;</a><a id="e51" class="point_e" onclick="point(5,1);">&nbsp;&nbsp;</a><a id="e52" class="point_e" onclick="point(5,2);">&nbsp;&nbsp;</a><a id="e53" class="point_e" onclick="point(5,3);">&nbsp;&nbsp;</a><a id="e54" class="point_e" onclick="point(5,4);">&nbsp;&nbsp;</a></td></tr>
+<tr><td width="50%" style="padding-left:20px;">Ataque:</td><td align="left"><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a id="e60" class="point_e" onclick="point(6,0);">&nbsp;&nbsp;</a><a id="e61" class="point_e" onclick="point(6,1);">&nbsp;&nbsp;</a><a id="e62" class="point_e" onclick="point(6,2);">&nbsp;&nbsp;</a><a id="e63" class="point_e" onclick="point(6,3);">&nbsp;&nbsp;</a><a id="e64" class="point_e" onclick="point(6,4);">&nbsp;&nbsp;</a></td></tr>
+<tr><td width="50%" style="padding-left:20px;">Velocidad:</td><td align="left"><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a class="point_d">&nbsp;&nbsp;</a><a id="e70" class="point_e" onclick="point(7,0);">&nbsp;&nbsp;</a><a id="e71" class="point_e" onclick="point(7,1);">&nbsp;&nbsp;</a><a id="e72" class="point_e" onclick="point(7,2);">&nbsp;&nbsp;</a><a id="e73" class="point_e" onclick="point(7,3);">&nbsp;&nbsp;</a><a id="e74" class="point_e" onclick="point(7,4);">&nbsp;&nbsp;</a></td></tr>
+<tr><td colspan="2" align="center">Te quedan <b><a id="tCount">4</a></b> de <b>4</b></td></tr>
+</table>
+</div>
+</td></tr>
+						  <tr><td colspan="2" style="color:Olive;text-align:center;">{N_FICHAJES} {N_F} {FICHAJES} {OUT_OF} 16</td></tr>
+						  <tr><td colspan="2">&nbsp;</td></tr>
+						  <tr><td colspan="2" align="center"><input type="submit" value="{SEND}"></td></tr>
+						</table>
+						</form>
+					</td>
+                      </tr>
+                    </table>
+				</div>
+				</div>
+			</div>
+			</div>
+			<!-- end content -->
+			<!-- start sidebars -->
+			<div id="sidebar2" class="sidebar">
+				<div id="sidebar2-bgtop">
+				<div id="sidebar2-bgbtm">
+				<ul>
+					<li>
+						<form id="searchform" method="get" action="#">
+							<div>
+								<h2>{LANG_CHOOSE}</h2>
+                              <ul>
+								<li><br/>
+						          <CENTER>
+						            <p>
+						              <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)" class="green_input" >
+						                <option value="es" {SEL1}>Español</option>
+						                <option value="ca" {SEL2}>Català</option>
+						                <option value="en" {SEL3}>English</option>
+						              </select>
+						            </p>
+					              </CENTER>
+								  <br/>
+                              </ul>
+                                <h2>Introducción</h2>
+                                <ul>
+								<li>
+                                <CENTER><a href="#">INTRODUCCIÓN AL JUEGO</a></CENTER>
+                                </ul>
+                                <h2>Club</h2>
+                                <ul>
+								<li><a href="#">PRESUPUESTOS</a></li>
+                                <li><a href="#">TITULOS</a></li>
+                                <li><a href="#">PERSONAL</a></li>
+                                </ul>
+                                <h2>Estadio</h2>
+                              <ul>
+								<li><a href="#">MANTENIMIENTO</a></li>
+                                <li><a href="#">SOCIOS</a></li>
+                              </ul>
+                                <h2>Estadisticas</h2>
+                                <ul>
+								<li><a href="#">ESTADISTICAS PARTIDOS</a></li>
+                                <li><a href="#">ESTADISTICAS JUGADORES</a></li>
+                                <li><a href="#">GOLES</li>
+                                </ul>
+						  </div>
+						</form>
+					</li>
+				  </ul>
+                  
+			</div>
+			</div>
+			</div>
+			<!-- end sidebars -->
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+	</div>
+	<!-- end page -->
+</div>
+<div id="footer">
+  <p class="link"><a href="#">EL 11 IDEAL</a><a href="#"></a></p>
+  <img src="{STYLE_DIR}images/parteinferior.gif" alt="inferior" longdesc="parte inferiror" /></div>
+</body>
+</html>
+
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="{STYLE_PATH}pngfix.js"></script>
+<![endif]-->
+

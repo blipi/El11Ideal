@@ -1,0 +1,6 @@
+<?
+$lng = array_merge($lng, array(
+	'FATAL_ERROR' => 'Error fatal',
+	'TEAM_NOT_FOUND' => 'Tu equipo no ha podido ser encontrado...<br>El problema puede deberse a un error de la base de datos o bien ser temporal, pruebe luego y si el problema persiste contacte el administrador.'
+));
+?>

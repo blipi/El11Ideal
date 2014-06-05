@@ -1,0 +1,24 @@
+<?
+$lng = array_merge($lng, 
+	array(
+	"PROFILE" => "PERFIL",
+	"LOGOFF" => "SALIR",
+	'TEAM' => "Equipo",
+	'ALIGN' => "ALINEACIÓN",
+	'TACTICS' => "TÁCTICA",
+	'TRAINING' => "ENTRENAMIENTO",
+	'LESIONES' => "LESIONES",
+	'PLAYS' => "Partidos",
+	'TODAY_PLAYS' => "PARTIDOS DE HOY",
+	'AMISTOSOS' => "AMISTOSOS",
+	'CALENDAR' => "CALENDARIO PARTIDOS",
+	'RESULTS' => "RESULTADOS",
+	'TRASPASOS' => "Traspasos",
+	'MARKET' => "MERCADO JUGADORES",
+	'ALTAS_BAJAS' => "ALTAS Y BAJAS",
+	'CONTRATOS' => "CONTRATOS",
+	'COMPETITION' => "Competicion",
+	'CLASIFICACION' => "CLASIFICACIÓN",
+	'JORNADA' => "JORNADA"
+));
+?>

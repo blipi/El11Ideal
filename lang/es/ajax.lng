@@ -1,0 +1,3 @@
+<?
+$lng['AJAX_LOADING'] = 'Cargando...';
+?>

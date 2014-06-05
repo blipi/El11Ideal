@@ -1,0 +1,14 @@
+<?
+$lng = array_merge($lng, 
+	array(
+	'REG_NAME_INVALID' => 'Debes escribir un nombre',
+	'REG_EMAIL_INVALID' => 'El email debe ser más largo de 3 carácteres y ser válido',
+	'REG_EMAIL_CONFIRM_INVALID' => 'La confirmación del email no es correcta',
+	'REG_NICK_INVALID' => 'El nombre de usuario debe ser más largo de 4 carácteres',
+	'REG_PASS_INVALID' => 'La contraseña debe ser más larga de 4 carácteres',
+	'REG_PASS_CONFIRM_INVALID' => 'La confirmación de la contraseña no es correcta',
+	'REG_PRIV_INVALID' => 'Debes aceptar la política de privacidad',
+	'REG_SUBMIT' => 'Registrarse',
+	'USERNAME_ALREADY_EXISTS' => 'Este nombre de usuario ya existe',
+
+));

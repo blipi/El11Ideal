@@ -1,0 +1,17 @@
+<?
+$lng = array_merge($lng, 
+	array(
+	'ROOT' => EL11IDEAL_PATH,
+	'LANGUAGE_DIR' => EL11IDEAL_PATH . LANGUAGE_DIR,
+	'TEMPLATE_DIR' => EL11IDEAL_PATH . TEMPLATE_DIR,
+	'STYLE_DIR' => EL11IDEAL_PATH . USER_STYLENAME,
+	'LANG' => USER_LANGNAME,
+	'FORUM' => "Forum",
+	'NORMAS' => "Normas",
+	'CONTACT' => "Contactar",
+	'LANG_CHOOSE' => "Elige idioma",
+	'WELCOM' => "Bienvenido",
+	'WELCOM_TO' => "a El 11 Ideal",
+	'NICK' => $user->username,
+));
+?>

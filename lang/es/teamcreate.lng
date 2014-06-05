@@ -1,0 +1,15 @@
+<?
+$lng = array_merge($lng, array(
+	'ERROR_ALREADY_CREATED' => "Este equipo ya existe...",
+	'TEAM_NAME' => 'Nombre del Equipo',
+	'TEAM_LEAGUE' => 'Liga',
+	'SEND' =>'Enviar y Crear Jugadores',
+	'TEAM_NAME_SHORT' => 'El nombre del equipo debe ser más largo de 3 carácteres.\\nMin.: 4',
+	'ERROR_EXISTS' => 'Ya hay un equipo registrado con este nombre!',
+	'MAX' => 'Máximo',
+	'TITLE' => 'Crea tu Equipo y Jugadores',
+	'TEAM_INFO_NOT_RECIVED' => 'La información del equipo no ha sido recibida correctamente...',
+	'UNEXPECTED_TEAM_REG_ERROR' => 'Error inesperado en el registro del club, reintente por favor...',
+	'WELCOME_TEAM_CREATE' => 'Bienvenido a El 11 Ideal. Su primer trabajo como entrenador será fundar su club. Primero de todo deberá escoger un nombre, y luego debererá seleccionar en que liga desea jugar. ¡El campo le espera <b>' . $user->username . '</b>!'
+));
+?>

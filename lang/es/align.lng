@@ -1,0 +1,7 @@
+<?
+$lng = array_merge($lng, array(
+	'CURRENT_POS' => 'Posición actual',
+	'IDEAL_POS' => 'Posición ideal',
+	'PLAYER_NAME' => 'Nombre del jugador',
+));
+?>

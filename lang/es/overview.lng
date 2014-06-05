@@ -1,0 +1,20 @@
+<?
+$lng = array_merge($lng, 
+	array(
+	"OVERVIEW_TITLE" => "Vista general",
+	"PL_NUMBER_MSG" => "Número de jugadores",
+	"STADISTICS" => "Estadísticas",
+	"AVG_DEF_MSG" => "Defensa media",	
+	"AVG_MID_MSG" => "Mediocampo media",
+	"AVG_ATK_MSG" => "Ataque medio",
+	"TOT_DEF_MSG" => "Defensa total",	
+	"TOT_MID_MSG" => "Mediocampo total",
+	"TOT_ATK_MSG" => "Ataque total",
+	"BEST_DEF_MSG" => "Mejor defensa",	
+	"BEST_MID_MSG" => "Mejor mediocampista",
+	"BEST_ATK_MSG" => "Mejor delantero",
+	"DELANTERO" => "DEL",
+	"NO_TACTIC" => "Atención, no tienes una táctica seleccionada, hazlo ahora",
+	"NO_ALIGN" => "Atención, tienes la alineación por defecto, cambiala ahora",
+	"HERE" => "Aquí"
+));

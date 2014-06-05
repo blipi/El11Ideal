@@ -1,0 +1,9 @@
+<?
+$lng = array_merge($lng, 
+	array(
+	"PORTERO" => "PTR",
+	"DEFENSA" => "DEF",
+	"MEDIO_DEF" => "MCD",
+	"MEDIO_ATA" => "MCA",
+	"DELANTERO" => "DEL"
+));

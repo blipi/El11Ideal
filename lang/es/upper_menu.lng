@@ -1,0 +1,9 @@
+<?
+$lng = array_merge($lng, 
+	array(
+	"INDEX" => "Inicio",
+	"FORUM" => "Foro",
+	'RULES' => "Normas",
+	'CONTACT' => "Contactar"
+));
+?>

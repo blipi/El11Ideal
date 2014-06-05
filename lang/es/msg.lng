@@ -1,0 +1,22 @@
+<?
+$lng = array_merge($lng, 
+	array(
+	"REDIRECT" => "En 5 segundos será redirigido al índice. De no ser asi, haga click aquí.",
+	"LOG_IN" => "Ha iniciado sesión correctamente",
+	"USER_OR_PASS_INCORRECT" => "Su nombre de usuario o contraseña son incorrectos.",
+	"REGISTERED_FINE" => "Ha sido registrado correctamente y su sesión ha sido ya iniciada",
+	"LOG_OUT" => "Su sesión ha sido cerrada correctamente",
+	"MSG_5" => "El idioma ha sido cambiado correctamente.",
+	"TACTIC_CHANGE_FINE" => "Ha cambiado la tactica de su equipo con exito.",
+	"TACTIC_CHANGE_ERROR" => "Hubo un error al cambiar la estrategia.",
+	"REGISTERED_NOT_LOGED_IN_1" => "Ha sido registrado",
+	"REGISTERED_NOT_LOGED_IN_2" => "pero su sesión no ha sido iniciada",
+	"MSG_9" => "Primero tiene que iniciar sesión!.",
+	"MSG_10" => "Parece ser que su IP ha cambiado, por favor vuelva a entrar!.",
+	'CLUB_PLAYERS_CREATED' => '¡Tu club y jugadores han sido creados con éxito!',
+	'CLUB_PLAYERS_ERROR_CREATE' => 'Ocurrió un error durante el registro de tu club... Reintento...',
+	'UNEXPECTED_ERROR' => 'Ocurrió un error inesperado...',
+	'ERROR_DATA_NOT_ARRIVED' => 'La información no ha llegado bien...',
+	'ALIGN_CHANGE_FINE' => '¡Alineación cambiada con éxito!'
+));
+?>

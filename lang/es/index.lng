@@ -1,0 +1,6 @@
+<?
+$lng['LOGIN_TXT'] = 'Por favor ingrese en la web';
+$lng['REGISTER_TXT'] = 'o Registrese';
+$lng['WELCOME'] = 'Bienvenido a El 11 Ideal!';
+$lng['WELCOME_TEXT'] = '<p>El 11 ideal es un juego de futbol online en el que podr&aacute;s jugar con otros usuarios de la red...En el encontrar&aacute;s todo lo que conlleva la gesti&oacute;n de un equipo de futbol; tanto desde el lado deportivo como administrativo...</p><p>Nuestro objetivo no solo es dar diversi&oacute;n a los usuarios sino tambi&eacute;n formar una comunidad mundial en la que todos podamos sentirnos comodos con el resto de contrincantes. Adem&aacute;s intentaremos tener una relacion cercana con todos los usuarios para hacer todo esto un poco m&aacute;s divertido... Para ello incorporamos un sistema de sugerencias en el que todo el mundo podr&aacute; dar ideas para hacer de El 11 ideal; el mejor juego de toda la red</p><p>Por ultimo solo desearos que disfrut&aacute;is y como se suele decir: &quot;suerte a todos y que gane el mejor&quot;<br />'
+?>

@@ -1,0 +1,7 @@
+<?
+$lng = array_merge($lng, array(
+	'MSG_TACTICS_1' => '¡SELECCIONA LA TÁCTICA NUEVA QUE',
+	'MSG_TACTICS_2' => 'TENDRÁ TU EQUIPO Y GUÁRDELA, YA QUE SINO',
+	'MSG_TACTICS_3' => 'SE QUEDARÁ CON LA ANTIGUA!'
+));
+?>

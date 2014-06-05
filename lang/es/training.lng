@@ -1,0 +1,22 @@
+<?
+$lng = array_merge($lng, 
+	array(
+	'TRAINING_NAME' => "Entrenamiento",
+	'PLANNED_TRAININGS' => "Número de entrenamientos planificados",
+	'ADD_MORE_TRAININGS' => "Añadir más entrenamientos",
+	'SHOW_TRAINING' => "Mostrar Entrenamiento",
+	'DELETE_TRAINING' => "Eliminar entrenamiento",
+	'BTN_DELETE' => "Eliminar",
+	'TRAINING_NAME_AJAX' => "Nombre personalizado",
+	'TRAINING_DAYS' => "Días de entrenamiento",
+	'EVERY_DAY' => "Todos los días",
+	'TWO_DAY' => "Cada dos días",
+	'THREE_DAY' => "Cada tres días",
+	'DEFINE' => "Definir un día",
+	'IF_DEFINE' => "Si es un solo día, seleccionar día",
+	'ERR_AJAX_0' => "Sesión no iniciada",
+	'ERR_AJAX_2' => "Los datos no fueron recibidos",
+	'ERR_AJAX_3' => "Se ha alcanzado el límite de entrenamientos",
+	 
+));
+?>

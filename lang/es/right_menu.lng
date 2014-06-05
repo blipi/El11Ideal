@@ -1,0 +1,25 @@
+<?
+$lng = array_merge($lng, 
+	array(
+	"LANG_IN_USE" => "TU IDIOMA",
+	
+	/*AQUESTA PART SERÀ SUBSTITUÏDA PER UNA DE DINÀMICA!*/
+	"ES" => "Castellano",
+	'CA' => "Català",
+	'EN' => "English",
+	
+	'INTRO_RIGHT' => 'Introducción',
+	'INTRO_GAME_RIGHT' => 'INTRODUCCIÓN AL JUEGO',
+	'CLUB' => 'Club',
+	'ESTIMATE' => 'PRESUPUESTOS',
+	'DEGREES' => 'TITULOS',
+	'STAFF' => 'PERSONAL',
+	'FIELD' => 'Estadio',
+	'MANTEINCEMENT' => 'MANTENIMIENTO',
+	'MEMBERS' => 'SOCIOS',
+	'STADISTICS' => 'Estadisticas',
+	'MATCHS_STADISTICS' => 'ESTADISTICAS PARTIDOS',
+	'PLAYERS_STADISTICS' => 'ESTADISTICAS JUGADORES',
+	'GOALS' => 'GOLES'
+));
+?>

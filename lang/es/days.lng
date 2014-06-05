@@ -1,0 +1,12 @@
+<?
+$lng = array_merge($lng, 
+	array(
+	'MON' => "Lunes",
+	'TUE' => "Martes",
+	'WED' => "Miércoles",
+	'THU' => "Jueves",
+	'FRY' => "Viernes",
+	'SAT' => "Sabado",
+	'SUN' => "Domingo",	 
+));
+?>

@@ -1,0 +1,41 @@
+<?
+$lng = array_merge($lng, 
+	array(
+	"PORTERO" => "Portero",
+	"DEFENSA" => "Defensa",
+	"MEDIO_DEF" => "Mediocampista-defensa",
+	"MEDIO_ATA" => "Mediocampista-atacante",
+	"DELANTERO" => "Delantero",
+	"CREATING" => "Creando Jugador",
+	"PLAYER_NAME" => "Nombre del jugador",
+	"PLAYER_SURNAME" => "Apellidos del jugador",
+	"PLAYER_POSITION" => "Posición",
+	"SEND" => "Enviar y Crear Siguiente",
+	"MAX" => "Máximo",
+	"REG_COMPLETE" => "Tu equipo, y respectivos, jugadores han sido registrados con exito!",
+	"ERROR_ALREADY_CREATED" => "Usted ya creo un equipo. El anterior, excepto los jugadores, ha sido eliminado.",
+	'WELCOME_PLAYER_CREATE' => '
+	¡Aquí vas a fichar tus primeros jugadores!  
+	Tu escoges cuantos jugadores quieres en cada posición, 
+	ten en cuenta que necesitas almenos 1 en cada, 
+	¡y tienes un <b>límite de 16 fichajes!</b><br>
+	¡Además tiene <b>15 puntos</b> por jugador para repartirlos como tú quieras!
+	Dale sobre las barras para añadir los puntos.',
+	'OUT_OF' => 'de',
+	'AUTOGEN' => 'Generar aleatoriamente',
+	'N_FICHAJES' => 'Llevas',
+	'FICHAJES' => 'fichajes',
+	'PLAYER_INFO_NOT_RECIVED' => 'La información del jugador no ha sido recibida correctamente...',
+	'ERROR_ALREADY_CREATED' => 'Ya existe un jugador con este mismo nombre y apellidos...',
+	'ERROR_FIRST_UNUSED' => 'Primero debe crear los jugadores que aun no tiene...',
+	'PLAYER_POS_LIMIT_REACH' => 'Se ha llegado al límite de jugadores para esta posición',
+	'UNEXPECTED_TEAM_REG_ERROR' => 'Error inesperado en el registro del jugador, reintente por favor...',
+	'REG_PLAYER_OK' => '¡Jugador {NAME} {SURNAME} fichado!',
+	'TEAM_CREATED' => '¡Tu club ha sido fundado!',
+	'TEAM_WAS_CREATED' => 'Tu club ya fue fundado, sin embargo no tienes jugadores.<br>¡Fíchalos ahora!',
+	'TEAM_PLAYERS_EXIST' => 'Parece ser que te quedaste a medias de los fichajes.<br>¡Termínalos ahora!',
+	'LAST_PLAYER' => 'Este era tu último jugador.',
+	'PLAYER_POINTS_EXCEED' => '¡Ha utilizado más de 4 puntos!',
+	'PLAYER_NAME_SHORT' => 'El nombre del jugador debe ser más largo de 3 carácteres.\\nMin.: 4',
+	'PLAYER_SURNAME_SHORT' => 'El/Los apellido(s) del jugador debe(n) ser más largo(s) de 3 carácteres.\\nMin.: 4'
+));
